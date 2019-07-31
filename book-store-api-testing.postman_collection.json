@@ -1,0 +1,387 @@
+{
+	"info": {
+		"_postman_id": "e0d42f22-6d71-4394-84c5-954c521d8ad1",
+		"name": "Book Store Api Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "search by author ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/book/search/author/Robin Nixon",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"book",
+						"search",
+						"author",
+						"Robin Nixon"
+					]
+				},
+				"description": "search by author Robin Nixon"
+			},
+			"response": []
+		},
+		{
+			"name": "search by author",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/book/search/author/Christopher Negus",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"book",
+						"search",
+						"author",
+						"Christopher Negus"
+					]
+				},
+				"description": "search by author Christopher Negus"
+			},
+			"response": []
+		},
+		{
+			"name": "list of categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/book/categories",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"book",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search by category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/book/search/category/Linux",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"book",
+						"search",
+						"category",
+						"Linux"
+					]
+				},
+				"description": "search by category Linux"
+			},
+			"response": []
+		},
+		{
+			"name": "search by category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/book/search/category/PHP",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"book",
+						"search",
+						"category",
+						"PHP"
+					]
+				},
+				"description": "search by category PHP"
+			},
+			"response": []
+		},
+		{
+			"name": "search by author and category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/book/search/author/Robin Nixon/category/Linux",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"book",
+						"search",
+						"author",
+						"Robin Nixon",
+						"category",
+						"Linux"
+					]
+				},
+				"description": "search by author Robin Nixon and category Linux"
+			},
+			"response": []
+		},
+		{
+			"name": "create book with valid ISBN",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"isbn\": \"978-1491905012\",\n    \"title\": \"Modern PHP: New Features and Good Practices\",\n    \"author\": \"Josh Lockhart\",\n    \"category\": \"PHP\",\n    \"price\": \"18.99 GBPP\"\n}\n "
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/book/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"book",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create book with invalid ISBN",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"isbn\": \"978-INVALID-ISBN-1491905012\",\n    \"title\": \"Modern PHP: New Features and Good Practices\",\n    \"author\": \"Josh Lockhart\",\n    \"category\": \"PHP\",\n    \"price\": \"18.99 GBPP\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/book/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"book",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"isbn\": \"978-1491918661\",\n    \"title\": \"Learning PHP, MySQL & JavaScript: With jQuery, CSS & HTML5\",\n    \"author\": \"Robin Nixon\",\n    \"category\": \"PHP, Javascript\",\n    \"price\": \"9.99 GBP\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/book/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"book",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"isbn\": \"978-1491918661\",\n    \"title\": \"Linux Bible\",\n    \"author\": \"Christopher Negus \",\n    \"category\": \"Linux\",\n    \"price\": \"19.99 GBP\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/book/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"book",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"isbn\": \"978-0596517748\",\n    \"title\": \"JavaScript: The Good Parts\",\n    \"author\": \"Douglas Crockford\",\n    \"category\": \"Javascript\",\n    \"price\": \"8.99 GBP\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/book/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"book",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"isbn\": \"978-0596804848\",\n    \"title\": \"Ubuntu: Up and Running: A Power User's Desktop Guide\",\n    \"author\": \"Robin Nixon\",\n    \"category\": \"Linux\",\n    \"price\": \"12.99 GBP\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/book/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"book",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
