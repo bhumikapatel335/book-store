@@ -25,7 +25,7 @@ You will need the following things properly installed on your computer.
 
 * Run `php artisan serve` to start api
 
-### Testing
+## Testing
 
 * Import file 'book-store-api-testing.postman_collection' to Postman
 * Run test cases
