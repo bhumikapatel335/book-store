@@ -28,7 +28,7 @@ Route::get('v1/book/search/category/{category}', 'BookController@searchByCategor
 
 Route::get('v1/book/categories', 'BookController@showCategories');
 
-Route::delete('v1/book/{book}', 'BookController@delete');
+Route::delete('v1/book/{id}', 'BookController@delete');
 
-Route::put('v1/book/{book}', 'BookController@update');
+Route::put('v1/book/{id}', 'BookController@update');
 
