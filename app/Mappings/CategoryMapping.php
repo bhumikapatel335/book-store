@@ -7,6 +7,8 @@ use App\Entities\Book;
 use App\Entities\Category;
 use LaravelDoctrine\Fluent\EntityMapping;
 use LaravelDoctrine\Fluent\Fluent;
+use Doctrine\Common\Collections\ArrayCollection;
+
 
 class CategoryMapping extends EntityMapping
 {
@@ -15,6 +17,8 @@ class CategoryMapping extends EntityMapping
     {
         return Category::class;
     }
+
+
 
     /**
      * Load the object's metadata through the Metadata Builder object.
@@ -28,7 +32,9 @@ class CategoryMapping extends EntityMapping
 
         $builder->string('name')->nullable();
 
-        $builder->belongsTo(Book::class)->inversedBy('categories');
+        //$builder->belongsTo(Book::class)->inversedBy('categories');
+
+        $builder->manyTomany(Book::class)->mappedBy('categories');
 
     }
 

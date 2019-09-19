@@ -16,10 +16,6 @@ class BookMapping extends EntityMapping
         return Book::class;
     }
 
-    public function __construct()
-    {
-        $this->categories = new ArrayCollection();
-    }
 
     /**
      * Load the object's metadata through the Metadata Builder object.
@@ -35,7 +31,11 @@ class BookMapping extends EntityMapping
         $builder->string('author')->nullable();
         $builder->string('price')->nullable();
 
-        $builder->hasMany(Category::class)->mappedBy('$book');
+
+        //$builder->oneToMany(Category::class)->mappedBy('book');
+
+        $builder->manyToMany(Category::class)->inversedBy('books');
+
 
 
     }

@@ -221,6 +221,7 @@ return [
     'repositories' => [
         'map' => [
             \App\Entities\Book::class => \App\Repostiories\BookRepository::class,
+            \App\Entities\Category::class => \App\Repostiories\CategoryRepository::class,
         ]
     ]
 ];

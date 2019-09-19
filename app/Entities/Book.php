@@ -4,20 +4,62 @@ namespace App\Entities;
 
 
 
+use Doctrine\Common\Collections\ArrayCollection;
+
 class Book
 {
-
+    /** @var  */
     protected $id;
 
+    /** @var string */
     protected $isbn;
 
+    /** @var string */
     protected $title;
 
+    /** @var string */
     protected $author;
 
+    /** @var  string */
     protected $price;
 
-    protected $categories;
+    /** @var ArrayCollection  */
+    public $categories;
+
+
+
+    public function __construct()
+    {
+        $this->categories = new ArrayCollection();
+    }
+
+    public function addCategory(Category $category){
+
+        if( ! $this->categories->contains($category))
+        {
+            $this->categories->add($category);
+
+            $category->addBook($this);
+        }
+
+    }
+
+    /**
+     * @return ArrayCollection
+     */
+    public function getCategories(): ArrayCollection
+    {
+        return $this->categories;
+    }
+
+    /**
+     * @param ArrayCollection $categories
+     */
+    public function setCategories(ArrayCollection $categories)
+    {
+        $this->categories[] = $categories;
+    }
+
 
 
 
@@ -96,20 +138,9 @@ class Book
         $this->price = $price;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getCategories()
-    {
-        return $this->categories;
-    }
 
-    /**
-     * @param mixed $categories
-     */
-    public function setCategories($categories): void
-    {
-        $this->categories = $categories;
-    }
+public function resetCategory() {
+        $this->categories->clear();
+}
 
 }
