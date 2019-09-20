@@ -28,6 +28,7 @@ return [
 
                 App\Mappings\BookMapping::class,
                 App\Mappings\CategoryMapping::class,
+                App\Mappings\UserMapping::class,
 
             ],
             'connection'    => env('DB_CONNECTION', 'mysql'),
@@ -222,6 +223,7 @@ return [
         'map' => [
             \App\Entities\Book::class => \App\Repostiories\BookRepository::class,
             \App\Entities\Category::class => \App\Repostiories\CategoryRepository::class,
+            \App\Entities\User::class => \App\Repostiories\UserRepository::class,
         ]
     ]
 ];

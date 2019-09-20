@@ -139,8 +139,9 @@ class Book
     }
 
 
-public function resetCategory() {
+    public function resetCategory()
+    {
         $this->categories->clear();
-}
+    }
 
 }

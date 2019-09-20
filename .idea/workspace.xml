@@ -2,20 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9f6c772-ea5b-41b9-bb89-9e22c4af663e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/book-store.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/book-store.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Entities/Book.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Entities/Book.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Entities/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Entities/Category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Mappings/BookMapping.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mappings/BookMapping.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Mappings/CategoryMapping.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mappings/CategoryMapping.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repostiories/BookRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repostiories/BookRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/doctrine.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/doctrine.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/Version20190913141202.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +52,13 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="bookstore: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="bookstore" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="bookstore: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="users: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -60,61 +66,67 @@
     <session id="-2051906306">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.7" value="3" />
+          <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.8" value="3" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="DoctorineBookRepository" value="24" />
-          <entry key="cell" value="9" />
-          <entry key="env" value="27" />
+          <entry key="cell" value="10" />
+          <entry key="env" value="105" />
           <entry key="example" value="36" />
           <entry key="gitignore" value="16" />
-          <entry key="php" value="6780" />
+          <entry key="php" value="8819" />
           <entry key="sql" value="107" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="6804" />
+          <entry key=".env file" value="78" />
+          <entry key="Blade" value="41" />
+          <entry key="PHP" value="8802" />
           <entry key="PLAIN_TEXT" value="79" />
           <entry key="SQL" value="36" />
-          <entry key="Scratch" value="80" />
+          <entry key="Scratch" value="81" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="DoctorineBookRepository" value="1" />
-          <entry key="book_category" value="25" />
-          <entry key="books" value="27" />
-          <entry key="categories" value="26" />
+          <entry key="book_category" value="26" />
+          <entry key="books" value="30" />
+          <entry key="categories" value="28" />
+          <entry key="env" value="2" />
           <entry key="example" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="json" value="2" />
+          <entry key="json" value="3" />
           <entry key="log" value="1" />
-          <entry key="migrations" value="3" />
-          <entry key="php" value="66" />
+          <entry key="migrations" value="6" />
+          <entry key="php" value="102" />
           <entry key="phpunit" value="1" />
           <entry key="sql" value="19" />
+          <entry key="users" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="81" />
-          <entry key="JSON" value="2" />
-          <entry key="PHP" value="68" />
+          <entry key=".env file" value="2" />
+          <entry key="Blade" value="1" />
+          <entry key="Database Element" value="93" />
+          <entry key="JSON" value="3" />
+          <entry key="PHP" value="103" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Scratch" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="4" />
+          <entry key="PHP Class.type" value="5" />
         </counts>
       </usages-collector>
     </session>
@@ -122,28 +134,55 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Entities/Book.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="553">
+              <caret line="85" column="34" lean-forward="true" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
+              <folding>
+                <element signature="e#40#62#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Entities/Category.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/mail/user-created.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="90">
+              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Mail/UserCreated.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="e#28#50#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/SendNotification/MailNotification.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+              <folding>
+                <element signature="e#42#67#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BookController.php">
+        <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3272">
-              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+            <state relative-caret-position="435">
+              <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -177,20 +216,28 @@
         <option value="$PROJECT_DIR$/Entities/Book.php" />
         <option value="$PROJECT_DIR$/config/doctorine.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Repostiories/DoctorineBookRepository" />
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
-        <option value="$PROJECT_DIR$/config/doctrine.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1652775d-30fa-4e09-b15d-37d543ebd273/console.sql" />
-        <option value="$PROJECT_DIR$/app/Mappings/BookMapping.php" />
         <option value="$PROJECT_DIR$/app/Mappings/CategoryMapping.php" />
         <option value="$PROJECT_DIR$/app/Repostiories/BookRepository.php" />
         <option value="$PROJECT_DIR$/app/Repostiories/CategoryRepository.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/BookController.php" />
-        <option value="$PROJECT_DIR$/app/Entities/Book.php" />
         <option value="$PROJECT_DIR$/app/Entities/Category.php" />
         <option value="$PROJECT_DIR$/tests/Feature/ExampleTest.php" />
+        <option value="$PROJECT_DIR$/app/Entities/Book.php" />
+        <option value="$PROJECT_DIR$/tests/Unit/BookTest.php" />
+        <option value="$PROJECT_DIR$/app/Entities/User.php" />
+        <option value="$PROJECT_DIR$/config/doctrine.php" />
+        <option value="$PROJECT_DIR$/app/Mappings/BookMapping.php" />
+        <option value="$PROJECT_DIR$/app/Mappings/UserMapping.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/BookController.php" />
+        <option value="$PROJECT_DIR$/resources/views/mail/user-created.blade.php" />
+        <option value="$PROJECT_DIR$/app/Repostiories/UserRepository.php" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/app/Mail/UserCreated.php" />
+        <option value="$PROJECT_DIR$/app/SendNotification/MailNotification.php" />
+        <option value="$PROJECT_DIR$/.env" />
       </list>
     </option>
   </component>
@@ -203,6 +250,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/package.json" />
+      <path value="$PROJECT_DIR$/vendor/laravel/telescope/package.json" />
     </packageJsonPaths>
   </component>
   <component name="PhpServers">
@@ -309,11 +357,13 @@
       <path value="$PROJECT_DIR$/vendor/ocramius/proxy-manager" />
       <path value="$PROJECT_DIR$/vendor/zendframework/zend-code" />
       <path value="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager" />
+      <path value="$PROJECT_DIR$/vendor/laravel/telescope" />
+      <path value="$PROJECT_DIR$/vendor/moontoast/math" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1301" />
+    <option name="width" value="1111" />
     <option name="height" value="1337" />
   </component>
   <component name="ProjectView">
@@ -321,7 +371,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -338,61 +387,29 @@
               <item name="book-store" type="b2602c69:ProjectViewProjectNode" />
               <item name="book-store" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="book-store" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Mappings" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="book-store" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Repostiories" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="book-store" type="b2602c69:ProjectViewProjectNode" />
               <item name="book-store" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="SendNotification" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="book-store" type="b2602c69:ProjectViewProjectNode" />
               <item name="book-store" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="book-store" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="book-store" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="book-store" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="book-store" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="boo&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/app/Http/Controllers/BookController.php&#10;ap&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/routes/api.php&#10;book&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/app/Http/Controllers/BookController.php&#10;Book&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/app/Http/Controllers/BookController.php&#10;api&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/routes/api.php&#10;web&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/routes/web.php&#10;EntityMapp&#9;null&#9;null&#10;doc&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/vendor/laravel-doctrine/orm/config/doctrine.php" />
+    <property name="SearchEverywhereHistoryKey" value="api&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/routes/api.php&#10;ap&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/routes/api.php&#10;boo&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/app/Http/Controllers/BookController.php&#10;book&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/app/Http/Controllers/BookController.php&#10;Book&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/app/Http/Controllers/BookController.php&#10;web&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/routes/web.php&#10;EntityMapp&#9;null&#9;null&#10;doc&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/vendor/laravel-doctrine/orm/config/doctrine.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -446,17 +463,19 @@
       <workItem from="1568707587279" duration="14182000" />
       <workItem from="1568726440506" duration="5927000" />
       <workItem from="1568794338473" duration="15785000" />
-      <workItem from="1568880500566" duration="457000" />
+      <workItem from="1568880500566" duration="4053000" />
+      <workItem from="1568966827894" duration="19313000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157742000" />
+    <option name="totallyTimeSpent" value="180651000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1301" height="1337" extended-state="0" />
+    <frame x="0" y="23" width="1111" height="1337" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2152502" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13657624" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -469,17 +488,17 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.500417" side_tool="true" weight="0.3797054" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50119144" side_tool="true" weight="0.3715221" />
       <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32978722" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49958298" visible="true" weight="0.3715221" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4988086" visible="true" weight="0.26350245" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32978722" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.12311358" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.13283442" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21207307" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13657624" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -492,14 +511,14 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32978722" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.500417" side_tool="true" weight="0.3797054" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49958298" visible="true" weight="0.28968903" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50119144" side_tool="true" weight="0.3715221" />
+      <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32978722" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4988086" visible="true" weight="0.26350245" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32978722" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.12311358" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.13283442" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,39 +528,11 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Book.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/Version20190917114646.php" />
     <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2019-09-17.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1317">
           <caret line="504" column="72" selection-start-line="504" selection-start-column="72" selection-end-line="504" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://1652775d-30fa-4e09-b15d-37d543ebd273/schema/bookstore/table/categories" />
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repostiories/BookRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="44" selection-end-column="44" />
-          <folding>
-            <element signature="e#37#59#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Mappings/BookMapping.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -552,13 +543,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Unit/ExampleTest.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/CreatesApplication.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/TestCase.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Repostiories/CategoryRepository.php">
@@ -571,8 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://1652775d-30fa-4e09-b15d-37d543ebd273/schema/bookstore/table/book_category" />
-    <entry file="das://1652775d-30fa-4e09-b15d-37d543ebd273/schema/bookstore/table/books" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1652775d-30fa-4e09-b15d-37d543ebd273/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -583,31 +566,214 @@
     <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/phpunit">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/TestCase.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Entities/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://1652775d-30fa-4e09-b15d-37d543ebd273/schema/bookstore/table/book_category">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://1652775d-30fa-4e09-b15d-37d543ebd273/schema/bookstore/table/categories">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Feature/ExampleTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="225">
+          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/ExampleTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/BookTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/doctrine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="218" column="31" lean-forward="true" selection-start-line="218" selection-start-column="31" selection-end-line="218" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Mappings/BookMapping.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="e#32#54#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Entities/Book.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="2" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Entities/Category.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/Version20190920102751.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://1652775d-30fa-4e09-b15d-37d543ebd273/schema/bookstore/table/books">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://1652775d-30fa-4e09-b15d-37d543ebd273/schema/bookstore/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Entities/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="165">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Mappings/UserMapping.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+          <folding>
+            <element signature="e#34#56#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://1652775d-30fa-4e09-b15d-37d543ebd273/schema/bookstore/table/migrations">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Book.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="626">
+          <caret line="59" column="46" lean-forward="true" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repostiories/BookRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+          <folding>
+            <element signature="e#37#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repostiories/UserRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BookController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3272">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        <state relative-caret-position="800">
+          <caret line="143" column="17" lean-forward="true" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
+          <folding>
+            <element signature="e#40#66#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#7#35#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/mail/user-created.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="85" column="34" lean-forward="true" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
+          <folding>
+            <element signature="e#40#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Mail/UserCreated.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#28#50#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/SendNotification/MailNotification.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="e#42#67#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
         </state>
       </provider>
     </entry>
