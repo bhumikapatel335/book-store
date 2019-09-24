@@ -2,19 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9f6c772-ea5b-41b9-bb89-9e22c4af663e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/book-store.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/book-store.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Entities/Book.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Entities/Book.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Entities/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Entities/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Mail/UserCreated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/UserCreated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Mappings/UserMapping.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mappings/UserMapping.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repostiories/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repostiories/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/SendNotification/MailNotification.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SendNotification/MailNotification.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/doctrine.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/doctrine.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/Version20190913141202.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/Version20190920113317.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mail/user-created.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mail/user-created.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,30 +68,34 @@
     <session id="-2051906306">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.closed" value="11" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.7" value="4" />
-          <entry key="project.open.time.8" value="3" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.open.time.8" value="4" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="DoctorineBookRepository" value="24" />
           <entry key="cell" value="10" />
-          <entry key="env" value="105" />
+          <entry key="css" value="16" />
+          <entry key="env" value="202" />
           <entry key="example" value="36" />
           <entry key="gitignore" value="16" />
-          <entry key="php" value="8819" />
+          <entry key="json" value="2" />
+          <entry key="php" value="11132" />
           <entry key="sql" value="107" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key=".env file" value="78" />
-          <entry key="Blade" value="41" />
-          <entry key="PHP" value="8802" />
+          <entry key=".env file" value="175" />
+          <entry key="Blade" value="1562" />
+          <entry key="CSS" value="16" />
+          <entry key="JSON" value="2" />
+          <entry key="PHP" value="9594" />
           <entry key="PLAIN_TEXT" value="79" />
           <entry key="SQL" value="36" />
           <entry key="Scratch" value="81" />
@@ -101,26 +107,32 @@
           <entry key="book_category" value="26" />
           <entry key="books" value="30" />
           <entry key="categories" value="28" />
-          <entry key="env" value="2" />
+          <entry key="css" value="3" />
+          <entry key="env" value="4" />
           <entry key="example" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="json" value="3" />
+          <entry key="js" value="1" />
+          <entry key="json" value="4" />
           <entry key="log" value="1" />
-          <entry key="migrations" value="6" />
-          <entry key="php" value="102" />
+          <entry key="migrations" value="7" />
+          <entry key="php" value="114" />
           <entry key="phpunit" value="1" />
+          <entry key="scss" value="2" />
           <entry key="sql" value="19" />
-          <entry key="users" value="3" />
+          <entry key="users" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key=".env file" value="2" />
-          <entry key="Blade" value="1" />
-          <entry key="Database Element" value="93" />
-          <entry key="JSON" value="3" />
-          <entry key="PHP" value="103" />
+          <entry key=".env file" value="4" />
+          <entry key="Blade" value="4" />
+          <entry key="CSS" value="3" />
+          <entry key="Database Element" value="97" />
+          <entry key="JSON" value="4" />
+          <entry key="JavaScript" value="1" />
+          <entry key="PHP" value="112" />
           <entry key="PLAIN_TEXT" value="3" />
+          <entry key="SCSS" value="2" />
           <entry key="Scratch" value="19" />
         </counts>
       </usages-collector>
@@ -131,25 +143,25 @@
       </usages-collector>
     </session>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="book-store" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/mail/user-created.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="85" column="34" lean-forward="true" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
-              <folding>
-                <element signature="e#40#62#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="240">
+              <caret line="16" column="58" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/mail/user-created.blade.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/mail/mailNotification.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+            <state relative-caret-position="120">
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -157,32 +169,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Mail/UserCreated.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="570">
+              <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
               <folding>
-                <element signature="e#28#50#0#PHP" expanded="true" />
+                <element signature="e#29#58#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/SendNotification/MailNotification.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-              <folding>
-                <element signature="e#42#67#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -226,18 +217,23 @@
         <option value="$PROJECT_DIR$/tests/Feature/ExampleTest.php" />
         <option value="$PROJECT_DIR$/app/Entities/Book.php" />
         <option value="$PROJECT_DIR$/tests/Unit/BookTest.php" />
-        <option value="$PROJECT_DIR$/app/Entities/User.php" />
         <option value="$PROJECT_DIR$/config/doctrine.php" />
         <option value="$PROJECT_DIR$/app/Mappings/BookMapping.php" />
-        <option value="$PROJECT_DIR$/app/Mappings/UserMapping.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/BookController.php" />
-        <option value="$PROJECT_DIR$/resources/views/mail/user-created.blade.php" />
-        <option value="$PROJECT_DIR$/app/Repostiories/UserRepository.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
-        <option value="$PROJECT_DIR$/app/Mail/UserCreated.php" />
-        <option value="$PROJECT_DIR$/app/SendNotification/MailNotification.php" />
+        <option value="$PROJECT_DIR$/app/Entities/User.php" />
+        <option value="$PROJECT_DIR$/app/Mappings/UserMapping.php" />
+        <option value="$PROJECT_DIR$/app/Repostiories/UserRepository.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/app/SendNotification/MailNotification.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/resources/views/mail/mailNotification.php" />
+        <option value="$PROJECT_DIR$/resources/views/mail/user-created.blade.php" />
+        <option value="$PROJECT_DIR$/app/Mail/UserCreated.php" />
+        <option value="$PROJECT_DIR$/public/css/style.css" />
+        <option value="$PROJECT_DIR$/public/css/styles.css" />
+        <option value="$PROJECT_DIR$/resources/views/mail/mailNotification.blade.php" />
       </list>
     </option>
   </component>
@@ -250,7 +246,6 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/package.json" />
-      <path value="$PROJECT_DIR$/vendor/laravel/telescope/package.json" />
     </packageJsonPaths>
   </component>
   <component name="PhpServers">
@@ -359,6 +354,11 @@
       <path value="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager" />
       <path value="$PROJECT_DIR$/vendor/laravel/telescope" />
       <path value="$PROJECT_DIR$/vendor/moontoast/math" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
@@ -387,6 +387,24 @@
               <item name="book-store" type="b2602c69:ProjectViewProjectNode" />
               <item name="book-store" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book-store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book-store" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Mail" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book-store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book-store" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Mappings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book-store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book-store" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Repostiories" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -400,6 +418,41 @@
               <item name="book-store" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="book-store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book-store" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book-store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book-store" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book-store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book-store" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book-store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book-store" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book-store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book-store" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book-store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book-store" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="mail" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -409,7 +462,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="api&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/routes/api.php&#10;ap&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/routes/api.php&#10;boo&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/app/Http/Controllers/BookController.php&#10;book&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/app/Http/Controllers/BookController.php&#10;Book&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/app/Http/Controllers/BookController.php&#10;web&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/routes/web.php&#10;EntityMapp&#9;null&#9;null&#10;doc&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/vendor/laravel-doctrine/orm/config/doctrine.php" />
+    <property name="SearchEverywhereHistoryKey" value="user&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/app/Repostiories/UserRepository.php&#10;api&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/routes/api.php&#10;ap&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/routes/api.php&#10;boo&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/app/Http/Controllers/BookController.php&#10;book&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/app/Http/Controllers/BookController.php&#10;Book&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/app/Http/Controllers/BookController.php&#10;web&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/routes/web.php&#10;EntityMapp&#9;null&#9;null&#10;doc&#9;FILE&#9;file:///Users/bhumika/Documents/book-store/vendor/laravel-doctrine/orm/config/doctrine.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -464,21 +517,23 @@
       <workItem from="1568726440506" duration="5927000" />
       <workItem from="1568794338473" duration="15785000" />
       <workItem from="1568880500566" duration="4053000" />
-      <workItem from="1568966827894" duration="19313000" />
+      <workItem from="1568966827894" duration="19501000" />
+      <workItem from="1569226517025" duration="21640000" />
+      <workItem from="1569312436407" duration="473000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180651000" />
+    <option name="totallyTimeSpent" value="202952000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1111" height="1337" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13657624" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49888888" visible="true" weight="0.21796072" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Favorites" order="3" sideWeight="0.5011111" side_tool="true" weight="0.13844715" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -495,7 +550,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.13283442" />
+      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.13283442" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13657624" />
@@ -550,9 +605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="e#38#64#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -564,9 +616,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/phpunit">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/TestCase.php">
@@ -625,9 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <element signature="e#32#54#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -638,41 +684,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/Version20190920102751.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/Version20190920102751.php" />
     <entry file="das://1652775d-30fa-4e09-b15d-37d543ebd273/schema/bookstore/table/books">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://1652775d-30fa-4e09-b15d-37d543ebd273/schema/bookstore/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Entities/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Mappings/UserMapping.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-          <folding>
-            <element signature="e#34#56#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://1652775d-30fa-4e09-b15d-37d543ebd273/schema/bookstore/table/migrations">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -700,16 +713,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-          <folding>
-            <element signature="e#37#59#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repostiories/UserRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
@@ -717,9 +720,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="800">
           <caret line="143" column="17" lean-forward="true" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
-          <folding>
-            <element signature="e#40#66#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -727,53 +727,121 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#7#35#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/mail/user-created.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/Version20190920113317.php" />
+    <entry file="das://1652775d-30fa-4e09-b15d-37d543ebd273/schema/bookstore/table/migrations">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="85" column="34" lean-forward="true" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
-          <folding>
-            <element signature="e#40#62#0#PHP" expanded="true" />
-          </folding>
+    <entry file="das://1652775d-30fa-4e09-b15d-37d543ebd273/schema/bookstore/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Mail/UserCreated.php">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#28#50#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/SendNotification/MailNotification.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <element signature="e#42#67#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="525">
+          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
-          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Entities/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="72" column="7" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" lean-forward="true" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/mail/mailNotification.php" />
+    <entry file="file://$PROJECT_DIR$/app/SendNotification/MailNotification.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Mappings/UserMapping.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repostiories/UserRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="87" column="39" selection-start-line="87" selection-start-column="39" selection-end-line="87" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Mail/UserCreated.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+          <folding>
+            <element signature="e#29#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/mail/user-created.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="58" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/app.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/mail/mailNotification.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>

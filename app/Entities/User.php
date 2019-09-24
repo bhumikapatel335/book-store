@@ -9,17 +9,16 @@ class User
     protected $id;
 
     /** @var  */
-    protected $firstName;
-
-    /** @var  */
-    protected $lastName;
-
-    /** @var  */
-    protected $mobileNo;
+    protected $username;
 
     /** @var  */
     protected $email;
 
+    /** @var  */
+    protected $password;
+
+    /** @var  */
+    protected $mobileNo;
 
 
     /**
@@ -30,53 +29,21 @@ class User
         return $this->id;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getFirstName()
-    {
-        return $this->firstName;
-    }
-
-    /**
-     * @param mixed $firstName
-     */
-    public function setFirstName($firstName): void
-    {
-        $this->firstName = $firstName;
-    }
 
     /**
      * @return mixed
      */
-    public function getLastName()
+    public function getUsername()
     {
-        return $this->lastName;
+        return $this->username;
     }
 
     /**
-     * @param mixed $lastName
+     * @param mixed $username
      */
-    public function setLastName($lastName): void
+    public function setUsername($username): void
     {
-        $this->lastName = $lastName;
-    }
-
-
-    /**
-     * @return mixed
-     */
-    public function getMobileNo()
-    {
-        return $this->mobileNo;
-    }
-
-    /**
-     * @param mixed $mobileNo
-     */
-    public function setMobileNo($mobileNo): void
-    {
-        $this->mobileNo = $mobileNo;
+        $this->username = $username;
     }
 
     /**
@@ -93,6 +60,38 @@ class User
     public function setEmail($email): void
     {
         $this->email = $email;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPassword()
+    {
+        return $this->password;
+    }
+
+    /**
+     * @param mixed $password
+     */
+    public function setPassword($password): void
+    {
+        $this->password = $password;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getMobileNo()
+    {
+        return $this->mobileNo;
+    }
+
+    /**
+     * @param mixed $mobileNo
+     */
+    public function setMobileNo($mobileNo): void
+    {
+        $this->mobileNo = $mobileNo;
     }
 
 

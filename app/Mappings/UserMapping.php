@@ -26,10 +26,10 @@ class UserMapping extends EntityMapping
     {
 
         $builder->increments('id');
-        $builder->string('firstName')->nullable();
-        $builder->string('lastName')->nullable();
-        $builder->bigInteger('mobileNo')->nullable();
+        $builder->string('username')->nullable();
         $builder->string('email')->nullable();
+        $builder->string('password')->nullable();
+        $builder->bigInteger('mobileNo')->nullable();
 
 
     }

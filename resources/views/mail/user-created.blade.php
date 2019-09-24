@@ -1,12 +1,36 @@
-@component('mail::message')
-# User Created
+@component('mail::layout')
+    {{-- Header --}}
+    @slot('header')
+        @component('mail::header', ['url'=>''])
+            <!-- header here -->
+        @endcomponent
+    @endslot
 
-New User is Created.
+@component('mail::panel')
+#Hello,@foreach($user as $name)
+         {{ $name->getUsername()}} !
+    @endforeach
+Congratulations !!!!
 
-@component('mail::button', ['url' => ''])
-View User
+    Your Registration has been Accepted.
+
+@component('mail::button', ['url' => 'https://hubsolv.com'])
+    View Site
 @endcomponent
 
-Thanks,<br>
-{{ config('app.name') }}
+Regards,<br>
+Hubsolv
 @endcomponent
+
+    {{-- Footer --}}
+    @slot('footer')
+        @component('mail::footer')
+            <!-- footer here -->
+        @endcomponent
+    @endslot
+
+@endcomponent
+
+
+
+

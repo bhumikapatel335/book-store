@@ -82,14 +82,16 @@ class UserController extends Controller
         $users = $this->userRepository->getUserByName($name);
 
         $email = null;
+        $password = null;
 
         foreach ($users as $user) {
             $email = $user->getEmail();
         }
-
         $mailNotification = new MailNotification();
 
-        $mailNotification->send($email);
+        $mailNotification->send($email,$users);
+
+
 
 
 

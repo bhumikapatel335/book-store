@@ -14,10 +14,10 @@ class UserRepository extends EntityRepository {
 
     public function save($user , $request)
     {
-        $user->setFirstName($request->get('firstName'));
-        $user->setLastName($request->get('lastName'));
-        $user->setMobileNo($request->get('mobileNo'));
+        $user->setUsername($request->get('username'));
         $user->setEmail($request->get('email'));
+        $user->setPassword(encrypt($request->get('password')));
+        $user->setMobileNo($request->get('mobileNo'));
 
         return $user;
 
@@ -25,7 +25,7 @@ class UserRepository extends EntityRepository {
 
     public function getUserByName($name)
     {
-        return $this->findBy(['firstName'=> $name ]);
+        return $this->findBy(['username'=> $name ]);
     }
 
 }

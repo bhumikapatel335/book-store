@@ -2,7 +2,7 @@
 
 namespace App\Mail;
 
-use App\Entities\User;
+
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
@@ -19,9 +19,9 @@ class UserCreated extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($user)
     {
-
+        $this->user = $user;
     }
 
     /**
@@ -31,6 +31,13 @@ class UserCreated extends Mailable
      */
     public function build()
     {
-        return $this->markdown('mail.user-created');
+        $address = 'bhumika@hubsolv.com';
+        $name = 'Bhumika';
+        $subject = "Welcome to Hubsolv";
+
+        return $this->from($address, $name)
+                    ->subject($subject)
+                    ->markdown('mail.mailNotification');
+
     }
 }
